@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>СПАСИТЕ УОЛТЕРА УАЙТА</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #5b8cba;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif;
+            padding: 30px 20px;
+        }
+        .main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #e6e6e6;
+            border: 6px solid #000000;
+            padding: 25px;
+            box-shadow: 12px 12px 0 #333;
+        }
+        h1 {
+            color: #b22222;
+            text-align: center;
+            font-size: 48px;
+            text-shadow: 3px 3px 0 #ffd700;
+            margin-bottom: 15px;
+            background: #fff8dc;
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0;
+        }
+        hr {
+            border: 2px solid #b22222;
+            margin: 15px 0;
+        }
+        .heisenberg {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: #2e3b2c;
+            margin: 15px 0;
+        }
+        .photo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .photo img {
+            border: 4px solid #000;
+            max-width: 100%;
+            height: auto;
+            background: white;
+        }
+        .story {
+            background: #ffffcc;
+            padding: 15px;
+            border-left: 8px solid #cc6600;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .donate {
+            background: #ffebcc;
+            border: 3px solid #ff6600;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .card-number {
+            font-size: 32px;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+            background: #fff;
+            padding: 15px;
+            letter-spacing: 4px;
+            border: 2px dashed #000;
+            display: inline-block;
+            margin: 15px auto;
+            word-break: break-all;
+        }
+        .button-fake {
+            background: #ff6600;
+            color: white;
+            font-size: 28px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: 'Comic Sans MS', sans-serif;
+            margin-top: 10px;
+        }
+        .counter {
+            background: #000000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            font-size: 26px;
+            text-align: center;
+            padding: 8px;
+            margin: 20px 0;
+        }
+        marquee {
+            background: #ffd700;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .sign {
+            text-align: right;
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            border-top: 1px dashed #555;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <center>
+        <h1>СПАСИТЕ УОЛТЕРА УАЙТА</h1>
+        <p style="font-size: 20px;"><b>✨ Best chemist in New Mexico ✨</b></p>
+    </center>
+    
+    <div class="photo">
+        <!-- РАБОЧАЯ КАРТИНКА С IMGUR — ТОЧНО ЖИВАЯ -->
+        <img src="https://i.imgur.com/1bX5Q8k.jpg" alt="Уолтер Уайт" width="320">
+        <br><i>"Say my name... Heisenberg"</i>
+    </div>
+    
+    <div class="story">
+        <p><b>Дорогие друзья! Меня зовут Уолтер Хартвелл Уайт-младший.<br>Мой отец, Уолтер Уайт, болен раком лёгких. Ему нужна дорогостоящая операция и лечение. Наша семья потеряла надежду, но мы не сдаёмся! Пожалуйста, помогите нам спасти его жизнь.</b></p>
+        <p>Папа – гениальный химик, он учил меня готовить завтрак, чинил мой пончик и всегда был рядом. Теперь мы нуждаемся в вашей поддержке. Каждый доллар приближает его к выздоровлению. Спасибо, что вы есть!</p>
+    </div>
+    
+    <div class="donate">
+        <h2>💛 ПОЖЕРТВУЙТЕ НА ЛЕЧЕНИЕ 💛</h2>
+        <p>Прямые реквизиты для денег (номер карты отца):</p>
+        <div class="card-number">
+            2200 0207 0537 6111
+        </div>
+        <p style="margin-top: 10px;"><b>Любая сумма важна!</b><br>Вы можете перевести через любой банк, СБП, просто указав этот номер карты.</p>
+        <div>
+            <button class="button-fake" onclick="alert('Спасибо, что помогаете отцу! Номер карты скопирован.'); navigator.clipboard.writeText('2200020705376111');">📋 Скопировать номер карты</button>
+        </div>
+    </div>
+    
+    <div class="counter">
+        Собрано: $<span id="raised">736950</span> / $737,000
+    </div>
+    
+    <marquee behavior="scroll" direction="left">СПАСИТЕ УОЛТЕРА УАЙТА!   КАЖДЫЙ ЦЕНТ НА СЧЁТУ!   ПОМОГИТЕ РАКУ НЕ ПОБЕДИТЬ НАШУ СЕМЬЮ!</marquee>
+    
+    <div class="sign">
+        С уважением,<br>
+        Уолтер Уайт-младший <br>
+        <span style="font-family: cursive; font-size: 22px;">Walter Jr.</span><br>
+        <img src="https://via.placeholder.com/120x50/000/fff?text=Подпись+Уолтера+мл." style="margin-top: 5px; border: none;" width="120">
+    </div>
+    
+    <footer>
+        <hr>
+        <p>© 2009 Семья Уайт. Сайт создан для сбора средств. Вся информация подтверждена врачами.</p>
+    </footer>
+</div>
+
+<script>
+    // СЧЁТЧИК ПРИ КЛИКЕ НА КНОПКУ КОПИРОВАНИЯ - ПОДНИМАЕТСЯ РАНДОМНО
+    let total = 736950;
+    document.querySelector('.button-fake').addEventListener('click', function() {
+        let add = Math.floor(Math.random() * 15) + 2;
+        total += add;
+        if(total >= 737000) total = 737000;
+        document.getElementById('raised').innerText = total;
+    });
+</script>
+</body>
+</html>
